@@ -1,0 +1,11 @@
+from typing import List
+
+def bubble_sort(list: List[int]) -> List[int] :
+    for i in range(0, len(list) - 1):
+        for j in range(i + 1, len(list)):
+            if(list[i]>list[j]):
+                list[i], list[j] = list[j], list[i]
+                
+    return list
+
+print(bubble_sort([2,1,5,2,7,1,4]))
