@@ -6,6 +6,7 @@ class Solution:
         if(smallest_number > 0):
             for i in range(1, smallest_number):
                 if(i not in nums): return i
-        else: return 1
 
-        return smallest_number + 1
+            return smallest_number + 1
+
+        return 1
