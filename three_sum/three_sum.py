@@ -7,7 +7,7 @@ class Solution:
                 difference = nums[i]+nums[j]
                 if(-difference in nums):
                     index = nums.index(-difference)
-                    if(i!=j and i!=index and j!=index):
+                    if(i!=index and j!=index):
                         pair = sorted([nums[i], nums[j], nums[index]])
                         if(pair not in solution):
                             solution.append(pair)
